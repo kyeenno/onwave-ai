@@ -522,7 +522,7 @@ What specific area would you like to explore first?`;
           <button
             className={`mt-6 w-full py-3 rounded-lg ${
               selections[question.id]?.length > 0
-                ? 'bg-primary text-white cursor-pointer hover:text-gray-500 transition ease-in-out duration-200'
+                ? 'bg-primary text-gray-400 dark:text-white cursor-pointer hover:text-gray-500 transition ease-in-out duration-200'
                 : 'bg-gray-300 text-gray-600 cursor-not-allowed'
             }`}
             onClick={submitMultiSelect}
@@ -555,7 +555,7 @@ What specific area would you like to explore first?`;
       
       {/* Show loading state during submission */}
       {isSubmitting && (
-        <div className="fixed inset-0 bg-[#001500] flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-gray-950 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-md w-full">
             <h3 className="text-xl font-bold mb-4 text-center">Analyzing Your Startup Profile</h3>
             <div className="flex justify-center mb-4">
