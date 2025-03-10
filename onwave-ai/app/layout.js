@@ -3,7 +3,7 @@ import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["sans-serif"],
+  subsets: ["latin"],
 });
 
 export const metadata = {
